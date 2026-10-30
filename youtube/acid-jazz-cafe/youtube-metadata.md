@@ -10,29 +10,32 @@ Alternative per i prossimi video (stesso schema dei loro più visti):
 - `Groovy Acid Jazz for Work | Focus & Good Vibes [Acid Jazz, Groove Jazz, Jazz for Work]`
 - `The Acid Jazz Bar [Acid Jazz Hits, Jazz Funk, Best of Acid Jazz]`
 
-## DESCRIZIONE (da incollare così com'è)
+## DESCRIZIONE (stesso schema di PLAYaudio)
 ```
-Acid Jazz Café ☕ 41 minutes of funky acid jazz grooves to brighten your day: perfect for work, study, coffee breaks, cooking or a relaxed evening with friends. Warm grooves, smooth melodies and a funky rhythm section, all original music from Hip Code Records.
+Acid Jazz Café | A Funky Groove Break [Acid Jazz, Jazz Funk, Groove Jazz]
 
-🎧 Listen on Spotify & all platforms: https://hipcoderecords.com
-🔔 Subscribe for new jazz & blues every week: https://www.youtube.com/@HipCodeRecords?sub_confirmation=1
+Follow us on Spotify 🎧 [LINK PROFILO SPOTIFY HIP CODE RECORDS]
+Follow us on Instagram 📱 [@INSTAGRAM HIP CODE]
+Website 🌐 https://hipcoderecords.com
 
-TRACKLIST
-00:00 Denise is Hot
-07:14 Denise Loves Funk
-13:11 Denise is Smooth
-17:54 Denise is Cool
-23:46 Denise is Crazy
-29:02 Denise 99 Chocolate
-35:46 Denise Says Adieu
+A carefully curated session of funky acid jazz grooves, featuring warm basslines, tight drums and soulful improvisation that set the perfect mood for your day. Perfect for working, studying, a long coffee break or a relaxed evening with friends, this selection captures the energy, the elegance and the irresistible groove of acid jazz from the Hip Code Records catalogue. ☕🎷✨
 
-Music: [ARTISTA / MUSICISTI]
-© & ℗ Hip Code Records · hipcoderecords.com
-For licensing & sync: info@hipcoderecords.com
+00:00 Denise is Hot [AUTORE] [ARTISTI]
+07:14 Denise Loves Funk [AUTORE] [ARTISTI]
+13:11 Denise is Smooth [AUTORE] [ARTISTI]
+17:54 Denise is Cool [AUTORE] [ARTISTI]
+23:46 Denise is Crazy [AUTORE] [ARTISTI]
+29:02 Denise 99 Chocolate [AUTORE] [ARTISTI]
+35:46 Denise Says Adieu [AUTORE] [ARTISTI]
 
-#acidjazz #jazzfunk #groovejazz #jazzcafe #funkyjazz #jazzforwork #hipcoderecords
+© & ℗ Hip Code Records · For licensing & sync: info@hipcoderecords.com
+
+Subscribe 🎷 https://www.youtube.com/@HipCodeRecords?sub_confirmation=1
+
+#acidjazz #jazzfunk #groovejazz #jazzcafe #funkyjazz #jazzforwork #acidjazzmusic #nujazz #instrumentaljazz #hipcoderecords
 ```
-(Su YouTube i primi 3 hashtag compaiono sopra il titolo: i più importanti sono #acidjazz #jazzfunk #groovejazz.)
+Formato delle righe, come fa PLAYaudio: **minutaggio · Titolo · COGNOME N. dell'autore · ARTISTI IN MAIUSCOLO**.
+Esempio: `00:00 Denise is Hot MARINI B. BRUNO MARINI, ALBERTO OLIVIERI`
 
 ## TAG (campo "Tag" di YouTube, max 500 caratteri: incolla tutta la riga)
 ```
