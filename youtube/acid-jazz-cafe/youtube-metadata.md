@@ -43,7 +43,7 @@ acid jazz, acid jazz music, acid jazz playlist, acid jazz cafe, jazz funk, funky
 ```
 
 ## IMPOSTAZIONI DI CARICAMENTO
-- **Miniatura**: `acid-jazz-cafe-thumbnail.jpg` (1280×720)
+- **Miniatura**: `acid-jazz-cafe-thumbnail-FINAL.jpg` (ritratto, mano sulle labbra) (1280×720)
 - **Pubblico**: "No, non è destinato ai bambini"
 - **Categoria**: Musica
 - **Lingua del video**: Nessuna lingua (strumentale). **Lingua del titolo e della descrizione**: Inglese
