@@ -33,6 +33,6 @@ for arg in sys.argv[1:]:
       'cpy':str(meta.get('Copyright') or ''),'genres':sorted({t['genre'] for t in tracks if t['genre']}),'tr':tracks}
     print('ok',cat,meta['Title'],len(tracks))
 json.dump(db,open(DB,'w'),ensure_ascii=False,indent=1)
-rel=sorted(db.values(),key=lambda r:r['cat'],reverse=True)
+rel=sorted(db.values(),key=lambda r:(r['iso'],r['cat']),reverse=True)
 open(os.path.join(ROOT,'assets','releases.js'),'w').write('window.RELEASES='+json.dumps(rel,ensure_ascii=False)+';\n')
 print('total',len(rel))

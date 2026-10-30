@@ -616,5 +616,138 @@
     "genre": "Acid Jazz"
    }
   ]
+ },
+ "VBT-KMH": {
+  "cat": "",
+  "t": "Kiss My Hand",
+  "a": "Valentina Black Trio & Bruno Marini & Alberto Olivieri",
+  "iso": "2025-10-10",
+  "d": "October 10, 2025",
+  "img": "assets/kiss-my-hand-cover.jpg",
+  "hero": "assets/kiss-my-hand-hero.jpg",
+  "upc": "",
+  "writers": "Valentina Black Trio, Bruno Marini, Alberto Olivieri",
+  "pub": "",
+  "prod": "",
+  "cpy": "2025 Hip Code",
+  "genres": [
+   "Jazz"
+  ],
+  "kind": "EP · 6 tracks",
+  "spotify": "https://open.spotify.com/album/2zdNWIN84xFBXkOcrvKoC7",
+  "tr": [
+   {
+    "t": "Kiss My Hand",
+    "len": "5:20",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Spaghetti House",
+    "len": "4:34",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Warning I'm Delicious",
+    "len": "3:43",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Kiss My Hand – Flute Reprise",
+    "len": "3:59",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Smoke Me Softly",
+    "len": "4:08",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Black Train",
+    "len": "3:15",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   }
+  ]
+ },
+ "VBT-BUT": {
+  "cat": "",
+  "t": "Butterflies",
+  "a": "Valentina Black Trio & Bruno Marini & Alberto Olivieri",
+  "iso": "2025-09-05",
+  "d": "September 5, 2025",
+  "img": "assets/butterflies-cover.jpg",
+  "hero": "assets/butterflies-hero.jpg",
+  "upc": "",
+  "writers": "Valentina Black Trio, Bruno Marini, Alberto Olivieri",
+  "pub": "",
+  "prod": "",
+  "cpy": "2025 Hip Code",
+  "genres": [
+   "Jazz"
+  ],
+  "kind": "Album · 7 tracks",
+  "spotify": "https://open.spotify.com/album/2HhcEIsplfkZgUU8nOpIS2",
+  "tr": [
+   {
+    "t": "Blue Man",
+    "len": "4:29",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Funky Warrior – Reprise",
+    "len": "5:07",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Circle Blade – Reprise",
+    "len": "4:06",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Mannish Boy",
+    "len": "4:07",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Round Trip To ACDC's Gig – Special Version",
+    "len": "4:00",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Grapes For Lunch",
+    "len": "4:41",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   },
+   {
+    "t": "Jazz Butterflies",
+    "len": "4:28",
+    "isrc": "",
+    "w": "",
+    "genre": "Jazz"
+   }
+  ]
  }
 }

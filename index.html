@@ -80,6 +80,8 @@ button{font:inherit;color:inherit}
 .panel .kick{letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:#777;font-weight:600;margin-bottom:26px}
 .panel p{font-size:18px;max-width:720px;margin-bottom:16px;color:#333}
 .release{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:52px;margin-top:40px}
+.listen{display:inline-block;background:#000;color:var(--gold);padding:10px 18px;text-decoration:none;font-weight:600;letter-spacing:.06em}
+.listen:hover{background:var(--gold);color:#000}
 .cover{width:100%;aspect-ratio:1;object-fit:cover}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:26px;margin-top:36px}
 .card{background:none;border:0;text-align:left;cursor:pointer;color:#111;padding:0;display:flex;flex-direction:column;justify-content:flex-start;align-self:start;font:inherit}
@@ -241,21 +243,23 @@ var NOTE={
  HIPC012:'Max Denny with Bruno Marini, Alberto Olivieri and Chubby John: blues from Muddy Waters\' "Mannish Boy" and John Coltrane\'s "Equinox" to original songs.',
  HIPC004:'Grazia Di Grace moves between standards like "Summertime" and "Fever" and original songs co-written with Bruno Marini.',
  HIPC005:'Zeno Fatti with Bruno Marini and Mattia Marotta: seven acid jazz tracks written together, from "Speedbag" to "Electric Heaven".',
+ 'Kiss My Hand':'A six-track EP by Valentina Black Trio with Bruno Marini and Alberto Olivieri, from "Kiss My Hand" to "Black Train".',
+ 'Butterflies':'Seven tracks by Valentina Black Trio with Bruno Marini and Alberto Olivieri, from "Blue Man" to "Jazz Butterflies".',
  HIPC002:'Lara Luppi sets seven poems by Emily Dickinson to music, from "Bring Me the Sunset in a Cup" to "The Brain Is Wider Than the Sky".'
 };
 R.forEach(function(r){r.g=r.genres.join(' · ');r.cr=r.writers?('Written by '+r.writers):'';r.pub='(P) '+r.cpy.replace(/Hip Code$/i,'Hip Code Records').replace(/HIP CODE$/,'Hip Code Records')+(/moveubabe/i.test(r.pub)?' · © '+r.iso.slice(0,4)+' Moveubabe Music Publishing Group':'');r.tr=r.tr.map(function(x){var w=(x.w||'').replace(/,\s*/g,', ');return [x.t,x.len,(w&&(!r.writers||w.replace(/\s/g,'')!==r.writers.replace(/\s/g,'')))?w:'']});if(r.tr.some(function(x){return x[2]}))r.cr=r.prod&&r.prod!=='Hip Code'&&r.prod!=='HIP CODE'?'Produced by '+r.prod:'';r.a=r.a.replace(/ & /g,', ');});
 // slides
 var stage=document.getElementById('stage'),art=stage.querySelector('.artists');
-R.slice().sort(function(a,b){return a.iso<b.iso?1:-1}).forEach(function(r){var d=document.createElement('div');d.className='shot rel';d.innerHTML='<div class="blur" style="background-image:url('+r.img+')"></div><img class="art" src="'+r.hero+'" alt=""><div class="caption"><small>'+esc(r.a.replace(/ & /g,' · '))+' · '+r.cat+'</small><b>'+esc(r.t)+'</b></div>';d.onclick=function(){open('catalogo');show(R.indexOf(r),true)};d.style.cursor='pointer';stage.insertBefore(d,art);});
+R.slice().sort(function(a,b){return a.iso<b.iso?1:-1}).forEach(function(r){var d=document.createElement('div');d.className='shot rel';d.innerHTML='<div class="blur" style="background-image:url('+r.img+')"></div><img class="art" src="'+r.hero+'" alt=""><div class="caption"><small>'+esc(r.a.replace(/ & /g,' · '))+(r.cat?' · '+r.cat:'')+'</small><b>'+esc(r.t)+'</b></div>';d.onclick=function(){open('catalogo');show(R.indexOf(r),true)};d.style.cursor='pointer';stage.insertBefore(d,art);});
 stage.firstElementChild.classList.add('on');
 // news
 var nl=document.getElementById('news'),items=[{iso:'2026-10-30',d:'October 30, 2026',h:'The new Hip Code Records website is live',p:"Our new home is hipcoderecords.com, with the full catalogue, news and a direct line for artists, licensing and sync: info@hipcoderecords.com."}];
-R.forEach(function(r){items.push({iso:r.iso,d:r.d,h:r.a+' — "'+r.t+'"',p:'"'+r.t+'" ('+r.cat+') is out now. '+(NOTE[r.cat]||'')});});
+R.forEach(function(r){items.push({iso:r.iso,d:r.d,h:r.a+' — "'+r.t+'"',p:'"'+r.t+'"'+(r.cat?' ('+r.cat+')':'')+' is out now on Hip Code Records. '+(NOTE[r.cat]||NOTE[r.t]||'')});});
 items.sort(function(a,b){return a.iso<b.iso?1:-1}).forEach(function(n){var a=document.createElement('article');a.innerHTML='<time datetime="'+n.iso+'">'+n.d+'</time><div><h3>'+esc(n.h)+'</h3><p>'+esc(n.p)+'</p></div>';nl.appendChild(a);});
 var grid=document.getElementById('grid'),det=document.getElementById('detail');
-R.forEach(function(r,k){var b=document.createElement('button');b.className='card';b.innerHTML='<img src="'+r.img+'" alt="'+esc(r.t)+' cover" loading="lazy"><b>'+esc(r.t)+'</b><span>'+esc(r.a)+'</span><span>'+r.cat+'</span>';b.onclick=function(){show(k,true)};grid.appendChild(b);});
+R.forEach(function(r,k){var b=document.createElement('button');b.className='card';b.innerHTML='<img src="'+r.img+'" alt="'+esc(r.t)+' cover" loading="lazy"><b>'+esc(r.t)+'</b><span>'+esc(r.a)+'</span><span>'+(r.cat||r.d.slice(-4))+'</span>';b.onclick=function(){show(k,true)};grid.appendChild(b);});
 function show(k,scroll){var r=R[k];[].forEach.call(grid.children,function(c,j){c.classList.toggle('on',j===k)});
- det.innerHTML='<div class="kick">'+r.cat+' · '+esc(r.g)+'</div><h3>'+esc(r.t)+'</h3><div class="meta"><div>Artist<strong>'+esc(r.a)+'</strong></div><div>Released<strong>'+r.d+'</strong></div><div>UPC<strong>'+r.upc+'</strong></div></div>'+
+ det.innerHTML='<div class="kick">'+(r.cat?r.cat+' · ':'')+esc(r.kind||r.g)+'</div><h3>'+esc(r.t)+'</h3><div class="meta"><div>Artist<strong>'+esc(r.a)+'</strong></div><div>Released<strong>'+r.d+'</strong></div>'+(r.upc?'<div>UPC<strong>'+r.upc+'</strong></div>':'')+'</div>'+(r.spotify?'<p style="margin:18px 0 0"><a class="listen" href="'+r.spotify+'" target="_blank" rel="noopener">Listen on Spotify &rarr;</a></p>':'')+
  '<div class="release"><img class="cover" src="'+r.img+'" alt="'+esc(r.t)+' cover"><div><ol class="tracks">'+r.tr.map(function(x,i){return '<li><em>'+('0'+(i+1)).slice(-2)+'</em><span>'+esc(x[0])+(x[2]?'<small>'+esc(x[2])+'</small>':'')+'</span><span>'+x[1]+'</span></li>'}).join('')+'</ol>'+
  '<p style="margin-top:20px;font-size:15px;color:#666">'+esc(r.cr)+'<br>'+esc(r.pub)+'</p></div></div>';
  if(scroll)det.scrollIntoView({behavior:'smooth'});}
