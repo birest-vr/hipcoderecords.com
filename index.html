@@ -31,8 +31,8 @@ button{font:inherit;color:inherit}
 .shot:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;mix-blend-mode:overlay;
  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .rel{background:#000;filter:none}
-.rel .blur{position:absolute;inset:-40px;background-position:center;background-size:cover;filter:blur(38px) brightness(.38);transform:scale(1.1)}
-.rel .art{position:absolute;left:50%;top:186px;height:calc(100vh - 366px);width:calc(100vh - 366px);max-width:86vw;max-height:86vw;transform:translateX(-50%);object-fit:contain;box-shadow:0 30px 90px rgba(0,0,0,.7);z-index:1}
+.rel .blur{position:absolute;inset:-40px;background-position:center;background-size:cover;filter:blur(38px) brightness(.38) grayscale(1);transform:scale(1.1)}
+.rel .art{position:absolute;left:50%;top:186px;height:calc(100vh - 366px);width:calc(100vh - 366px);max-width:86vw;max-height:86vw;transform:translateX(-50%);object-fit:contain;box-shadow:0 30px 90px rgba(0,0,0,.7);z-index:1;filter:grayscale(1) contrast(1.08)}
 .rel .caption{bottom:68px}
 .rel:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.78) 0,rgba(0,0,0,0) 48%)}
 .s3{background:radial-gradient(60% 80% at 30% 40%,#8a8a8a 0,#303030 40%,#000 78%)}
@@ -83,8 +83,8 @@ button{font:inherit;color:inherit}
 .cover{width:100%;aspect-ratio:1;object-fit:cover}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:26px;margin-top:36px}
 .card{background:none;border:0;text-align:left;cursor:pointer;color:#111;padding:0;display:flex;flex-direction:column;justify-content:flex-start;align-self:start;font:inherit}
-.card img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .35s,box-shadow .35s}
-.card:hover img,.card.on img{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;filter:grayscale(1);transition:transform .35s,box-shadow .35s,filter .35s}
+.card:hover img,.card.on img{filter:none;transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.25)}
 .card.on b,.card:hover b{color:#b8860b}
 .card b{display:block;font-family:Fraunces,serif;font-weight:400;font-size:22px;margin-top:12px;line-height:1.15}
 .card span{display:block;font-size:14px;color:#777}
