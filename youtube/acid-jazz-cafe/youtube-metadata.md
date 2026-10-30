@@ -20,13 +20,13 @@ Website 🌐 https://hipcoderecords.com
 
 A carefully curated session of funky acid jazz grooves, featuring warm basslines, tight drums and soulful improvisation that set the perfect mood for your day. Perfect for working, studying, a long coffee break or a relaxed evening with friends, this selection captures the energy, the elegance and the irresistible groove of acid jazz from the Hip Code Records catalogue. ☕🎷✨
 
-00:00 Denise is Hot [AUTORE] [ARTISTI]
-07:14 Denise Loves Funk [AUTORE] [ARTISTI]
-13:11 Denise is Smooth [AUTORE] [ARTISTI]
-17:54 Denise is Cool [AUTORE] [ARTISTI]
-23:46 Denise is Crazy [AUTORE] [ARTISTI]
-29:02 Denise 99 Chocolate [AUTORE] [ARTISTI]
-35:46 Denise Says Adieu [AUTORE] [ARTISTI]
+00:00 Denise is Hot VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
+07:14 Denise Loves Funk VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
+13:11 Denise is Smooth VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
+17:54 Denise is Cool VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
+23:46 Denise is Crazy VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
+29:02 Denise 99 Chocolate VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
+35:46 Denise Says Adieu VALENTINA BLACK TRIO, BRUNO MARINI, BIG CAESAR
 
 © & ℗ Hip Code Records · For licensing & sync: info@hipcoderecords.com
 
@@ -34,8 +34,7 @@ Subscribe 🎷 https://www.youtube.com/@HipCodeRecords?sub_confirmation=1
 
 #acidjazz #jazzfunk #groovejazz #jazzcafe #funkyjazz #jazzforwork #acidjazzmusic #nujazz #instrumentaljazz #hipcoderecords
 ```
-Formato delle righe, come fa PLAYaudio: **minutaggio · Titolo · COGNOME N. dell'autore · ARTISTI IN MAIUSCOLO**.
-Esempio: `00:00 Denise is Hot MARINI B. BRUNO MARINI, ALBERTO OLIVIERI`
+Formato delle righe come PLAYaudio: minutaggio · Titolo · ARTISTI IN MAIUSCOLO.
 
 ## TAG (campo "Tag" di YouTube, max 500 caratteri: incolla tutta la riga)
 ```
