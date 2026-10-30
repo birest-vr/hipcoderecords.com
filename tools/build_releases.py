@@ -4,7 +4,7 @@ import sys, json, os, datetime, openpyxl
 from PIL import Image
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB=os.path.join(ROOT,'tools','releases.json')
-MESI=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre']
+MESI=['January','February','March','April','May','June','July','August','September','October','November','December']
 db=json.load(open(DB)) if os.path.exists(DB) else {}
 def dur(x):
     s=str(x); p=s.split(':')
@@ -27,7 +27,7 @@ for arg in sys.argv[1:]:
     im=Image.open(cover).convert('RGB')
     a=im.copy(); a.thumbnail((1000,1000)); a.save(os.path.join(ROOT,'assets',f'{sl}-cover.jpg'),quality=85,optimize=True,progressive=True)
     b=im.copy(); b.thumbnail((2000,2000)); b.save(os.path.join(ROOT,'assets',f'{sl}-hero.jpg'),quality=80,optimize=True,progressive=True)
-    db[cat]={'cat':cat,'t':meta['Title'],'a':meta.get('Artist(s)'),'iso':d.isoformat(),'d':f"{d.day} {MESI[d.month-1]} {d.year}",
+    db[cat]={'cat':cat,'t':meta['Title'],'a':meta.get('Artist(s)'),'iso':d.isoformat(),'d':f"{MESI[d.month-1]} {d.day}, {d.year}",
       'img':f'assets/{sl}-cover.jpg','hero':f'assets/{sl}-hero.jpg','upc':str(meta.get('UPC Code') or ''),
       'writers':meta.get('Written By') or '','pub':meta.get('Published By') or '','prod':meta.get('Produced By') or '',
       'cpy':str(meta.get('Copyright') or ''),'genres':sorted({t['genre'] for t in tracks if t['genre']}),'tr':tracks}
