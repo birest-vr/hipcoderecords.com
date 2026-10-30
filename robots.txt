@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hipcoderecords.com/sitemap.xml

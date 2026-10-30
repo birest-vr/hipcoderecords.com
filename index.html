@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hip Code Records — Official Website</title>
+<meta name="description" content="Hip Code Records, etichetta jazz indipendente di Verona.">
+<link rel="canonical" href="https://hipcoderecords.com/">
+<meta property="og:title" content="Hip Code Records">
+<meta property="og:description" content="Etichetta jazz indipendente — Verona, Italia. Catalogo, news e contatti.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hipcoderecords.com/">
+<meta property="og:image" content="https://hipcoderecords.com/assets/hipc013-cover.jpg">
+<link rel="icon" href="assets/favicon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Hip Code Records","url":"https://hipcoderecords.com","email":"info@hipcoderecords.com","logo":"https://hipcoderecords.com/assets/hipcode-logo-black.png","address":{"@type":"PostalAddress","streetAddress":"Via Marin Faliero 16","postalCode":"37138","addressLocality":"Verona","addressCountry":"IT"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c79a4a;--ink:#fff;--max:1100px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:#000;color:#fff;font:400 16px/1.55 "Archivo Narrow",system-ui,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit;color:inherit}
+
+/* fullscreen B&W stage */
+.stage{position:fixed;inset:0}
+.shot{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease;filter:grayscale(1) contrast(1.08)}
+.shot.on{opacity:1}
+.shot:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+ background:repeating-radial-gradient(circle,#0c0c0c 0 2px,#1d1d1d 2px 4px);box-shadow:0 40px 120px rgba(0,0,0,.8)}
+.rel{background:#000}
+.rel .blur{position:absolute;inset:-40px;background-position:center;background-size:cover;filter:blur(38px) brightness(.38);transform:scale(1.1)}
+.rel .art{position:absolute;left:50%;top:186px;height:calc(100vh - 366px);width:calc(100vh - 366px);max-width:86vw;max-height:86vw;transform:translateX(-50%);object-fit:contain;box-shadow:0 30px 90px rgba(0,0,0,.7);z-index:1}
+.rel .caption{bottom:68px}
+.rel:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.78) 0,rgba(0,0,0,0) 48%)}
+.s3{background:radial-gradient(60% 80% at 30% 40%,#8a8a8a 0,#303030 40%,#000 78%)}
+.s3 .big{position:absolute;right:6vw;bottom:14vh;text-align:right;font-family:Fraunces,serif;font-weight:300;font-size:min(10vw,120px);line-height:.95}
+.caption{position:absolute;left:0;right:0;bottom:84px;text-align:center;z-index:3;pointer-events:none}
+.caption small{display:block;letter-spacing:.32em;text-transform:uppercase;font-size:12px;color:#ddd}
+.caption b{display:block;font-family:Fraunces,serif;font-weight:300;font-size:clamp(26px,3.4vw,40px);margin-top:4px}
+
+/* top band */
+.band{position:fixed;inset:0 0 auto 0;height:170px;background:rgba(0,0,0,.42);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(2px)}
+.band img{height:64px;width:auto}
+.band span{margin-top:16px;letter-spacing:.36em;text-transform:uppercase;font-weight:600;font-size:15px}
+.burger{position:fixed;left:0;top:0;width:46px;height:46px;background:var(--gold);border:0;z-index:30;cursor:pointer;display:grid;place-items:center}
+.burger i,.burger i:before,.burger i:after{display:block;width:20px;height:2px;background:#000;position:relative;content:""}
+.burger i:before{position:absolute;top:-6px}.burger i:after{position:absolute;top:6px}
+.newsbtn{position:fixed;right:0;top:0;height:74px;padding:0 20px;background:#000;border:0;z-index:30;cursor:pointer;font-family:Fraunces,serif;font-size:19px;letter-spacing:.02em}
+.newsbtn:hover{color:var(--gold)}
+.nav{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:4px}
+.nav button{width:46px;height:56px;background:#000;border:0;cursor:pointer;display:grid;place-items:center}
+.nav button:hover{color:var(--gold)}
+.nav svg{width:14px;height:22px}
+
+/* footer bar */
+.foot{position:fixed;left:0;right:0;bottom:0;height:46px;background:rgba(0,0,0,.82);z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:13px;color:#cfcfcf}
+.foot .mid{position:absolute;left:50%;transform:translateX(-50%);display:flex;height:100%}
+.foot .mid a{width:56px;display:grid;place-items:center;border-left:1px solid #333;text-decoration:none;font-size:12px;letter-spacing:.12em}
+.foot .mid a:last-child{border-right:1px solid #333}
+.foot .mid a:hover{color:var(--gold)}
+.foot nav a{text-decoration:none;margin-left:10px}
+.foot nav a:hover{color:#fff}
+
+/* side menu */
+.menu{position:fixed;left:0;top:0;bottom:0;width:min(380px,86vw);background:#0b0b0b;z-index:25;transform:translateX(-100%);transition:transform .45s ease;padding:96px 40px 40px;border-right:1px solid #1f1f1f}
+.menu.open{transform:none}
+.menu a{display:block;font-family:Fraunces,serif;font-weight:300;font-size:30px;text-decoration:none;padding:8px 0;border-bottom:1px solid #1d1d1d}
+.menu a:hover{color:var(--gold)}
+.menu .sub{margin-top:30px;font-size:13px;color:#8a8a8a;line-height:1.7}
+
+/* content panels */
+.panel{position:fixed;inset:0;z-index:40;background:#fff;color:#111;overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s}
+.panel.open{opacity:1;visibility:visible}
+.panel .x{position:fixed;right:18px;top:14px;width:46px;height:46px;border:0;background:#000;color:#fff;font-size:24px;cursor:pointer;z-index:2}
+.panel .in{max-width:var(--max);margin:0 auto;padding:110px 24px 90px}
+.panel h2{font-family:Fraunces,serif;font-weight:300;font-size:clamp(40px,6vw,72px);line-height:1;margin-bottom:12px}
+.panel .kick{letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:#777;font-weight:600;margin-bottom:26px}
+.panel p{font-size:18px;max-width:720px;margin-bottom:16px;color:#333}
+.release{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:52px;margin-top:40px}
+.cover{width:100%;aspect-ratio:1;object-fit:cover}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:26px;margin-top:36px}
+.card{background:none;border:0;text-align:left;cursor:pointer;color:#111;padding:0;display:flex;flex-direction:column;justify-content:flex-start;align-self:start;font:inherit}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;filter:grayscale(1);transition:filter .35s}
+.card:hover img,.card.on img{filter:none}
+.card b{display:block;font-family:Fraunces,serif;font-weight:400;font-size:22px;margin-top:12px;line-height:1.15}
+.card span{display:block;font-size:14px;color:#777}
+.detail{margin-top:56px;border-top:2px solid #000;padding-top:40px;scroll-margin-top:30px}
+.detail:empty{display:none}
+.detail h3{font-family:Fraunces,serif;font-weight:300;font-size:clamp(34px,5vw,56px);line-height:1;margin-bottom:14px}
+ol.tracks small{display:block;font-size:13px;color:#999}
+.sleeve{aspect-ratio:1;background:#000;color:#fff;padding:26px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;filter:grayscale(1)}
+.sleeve:before{content:"";position:absolute;inset:-30%;background:repeating-radial-gradient(circle at 72% 72%,transparent 0 9px,rgba(255,255,255,.07) 9px 10px)}
+.sleeve>*{position:relative}
+.sleeve span{font-size:11px;letter-spacing:.26em}
+.sleeve b{font-family:Fraunces,serif;font-weight:400;font-size:52px;line-height:1}
+.sleeve i{font-style:normal;font-size:14px;color:#bbb;display:block;margin-top:8px}
+ol.tracks{list-style:none;border-top:2px solid #000;margin-top:22px}
+ol.tracks li{display:flex;gap:16px;padding:11px 0;border-bottom:1px solid #e3e3e3;font-size:17px}
+ol.tracks em{font-style:normal;color:#888;width:22px}
+ol.tracks span:last-child{margin-left:auto;color:#888}
+.meta{display:flex;gap:34px;flex-wrap:wrap;font-size:14px;color:#777}
+.meta strong{display:block;color:#111}
+.labs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.labs div{border:1px solid #e3e3e3;min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px;text-align:center}
+.labs img{height:70px;width:auto}
+.labs small{letter-spacing:.2em;text-transform:uppercase;color:#777;font-weight:600}
+.labs b{font-size:16px;letter-spacing:.06em}
+.newslist article{padding:26px 0;border-bottom:1px solid #e3e3e3;display:grid;grid-template-columns:150px 1fr;gap:28px}
+.newslist time{color:#777;font-size:14px;padding-top:6px}
+.newslist h3{font-family:Fraunces,serif;font-weight:400;font-size:28px;line-height:1.15;margin-bottom:8px}
+.newslist p{font-size:16px}
+a.mail{font-family:Fraunces,serif;font-weight:300;font-size:clamp(28px,4vw,52px);text-decoration:none;border-bottom:2px solid var(--gold)}
+dl{margin-top:34px;font-size:16px}
+dt{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#888;margin-top:16px}
+
+@media (max-width:820px){
+ .rel .art{top:140px;bottom:auto;width:84vw;height:84vw}
+ .rel .caption{top:calc(140px + 84vw + 22px);bottom:auto;padding:0 18px}
+ .caption small{font-size:11px;letter-spacing:.18em;line-height:1.6}
+ .caption b{font-size:30px}
+ .grid{grid-template-columns:1fr 1fr;gap:18px 14px}
+ .card b{font-size:18px}
+ .card span{font-size:13px;color:#555}
+ .panel .in{padding:84px 18px 70px}
+ .panel p,.newslist p{font-size:16px;color:#222}
+ .newslist h3{font-size:23px}
+ .meta{gap:10px 22px}
+ ol.tracks li{font-size:16px}
+ .panel .x{right:10px;top:10px}
+ .band{height:120px}.band img{height:42px}.band span{font-size:11px;letter-spacing:.26em;margin-top:10px}
+ .newsbtn{height:46px;font-size:15px;padding:0 14px}
+ .foot{font-size:11px}.foot nav{display:none}.foot .mid{position:static;transform:none;margin-left:auto}
+ .foot .mid a{width:44px}
+ .release,.labs{grid-template-columns:1fr}
+ .newslist article{grid-template-columns:1fr;gap:6px}
+ .nav{top:calc(140px + 42vw - 28px);bottom:auto;left:0;right:0;transform:none;flex-direction:row;justify-content:space-between;pointer-events:none}
+ .nav button{pointer-events:auto;background:rgba(0,0,0,.55);width:38px}
+}
+</style>
+</head>
+<body>
+
+<div class="stage" aria-roledescription="carousel" id="stage">
+ <div class="shot s3 artists"><div class="big">For<br>Artists</div>
+  <div class="caption"><small>Demo · Licenze · Sync</small><b>info@hipcoderecords.com</b></div></div>
+</div>
+
+<header class="band">
+ <img src="assets/hipcode-logo.png" alt="Hip Code Records">
+ <span>Hip Code Records</span>
+</header>
+
+<button class="burger" aria-label="Menu" aria-expanded="false"><i></i></button>
+<button class="newsbtn" data-open="news">NEWS</button>
+
+<div class="nav">
+ <button class="prev" aria-label="Precedente"><svg viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 3 11l9 9"/></svg></button>
+ <button class="next" aria-label="Successivo"><svg viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m2 2 9 9-9 9"/></svg></button>
+</div>
+
+<nav class="menu" aria-label="Menu principale">
+ <a href="#" data-open="about">About</a>
+ <a href="#" data-open="catalogo">Catalogo</a>
+ <a href="#" data-open="labels">Labels</a>
+ <a href="#" data-open="news">News</a>
+ <a href="#" data-open="artists">For Artists</a>
+ <a href="#" data-open="contatti">Contatti</a>
+ <div class="sub">Hip Code Records<br>Via Marin Faliero 16, 37138 Verona<br>info@hipcoderecords.com</div>
+</nav>
+
+<footer class="foot">
+ <span>© <span id="y">2026</span> Hip Code Records</span>
+ <div class="mid">
+  <a href="mailto:info@hipcoderecords.com" aria-label="Email">@</a>
+  <a href="https://moveubabemusic.com" aria-label="Moveubabe Music">MM</a>
+ </div>
+ <nav><a href="#" data-open="contatti">Contatti</a> / <a href="#" data-open="labels">Moveubabe Music</a></nav>
+</footer>
+
+<!-- PANELS -->
+<section class="panel" id="p-about"><button class="x" aria-label="Chiudi">×</button><div class="in">
+ <div class="kick">About</div>
+ <h2>Un'etichetta jazz nata a Verona.</h2>
+ <p>Hip Code Records è un'etichetta jazz indipendente. Segue ogni disco dalla registrazione all'uscita: master, crediti, codici, distribuzione sulle piattaforme digitali e tutela dei diritti di autori e musicisti.</p>
+ <p>Le edizioni musicali del catalogo sono curate da Moveubabe Music Publishing Group. Hip Code Records fa parte del gruppo Moveubabe Music.</p>
+ <p style="color:#777;font-size:16px">Hip Code Records is an independent jazz label based in Verona, Italy. Publishing by Moveubabe Music Publishing Group.</p>
+</div></section>
+
+<section class="panel" id="p-catalogo"><button class="x" aria-label="Chiudi">×</button><div class="in">
+ <div class="kick">Catalogo</div>
+ <h2>Releases</h2>
+ <div class="grid" id="grid"></div>
+ <div class="detail" id="detail"></div>
+</div></section>
+
+<section class="panel" id="p-labels"><button class="x" aria-label="Chiudi">×</button><div class="in">
+ <div class="kick">Labels</div>
+ <h2>Il gruppo Moveubabe Music</h2>
+ <div class="labs">
+  <div><img src="assets/hipcode-logo-black.png" alt="Hip Code Records"><small>Jazz</small></div>
+  <div><img src="assets/moveubabe-logo-black.png" alt="Moveubabe Records"><small>Pop</small></div>
+  <div><b>MOVEUBABE MUSIC<br>PUBLISHING GROUP</b><small>Edizioni · BMI</small></div>
+ </div>
+</div></section>
+
+<section class="panel" id="p-news"><button class="x" aria-label="Chiudi">×</button><div class="in">
+ <div class="kick">News</div>
+ <h2>News</h2>
+ <div class="newslist" id="news"></div>
+</div></section>
+
+<section class="panel" id="p-artists"><button class="x" aria-label="Chiudi">×</button><div class="in">
+ <div class="kick">For Artists</div>
+ <h2>Mandaci la tua musica.</h2>
+ <p>Ascoltiamo progetti jazz italiani e internazionali. Manda una breve presentazione e un link d'ascolto (Bandcamp, SoundCloud, Dropbox, WeTransfer). Niente allegati pesanti: ti rispondiamo se il progetto è in linea con il catalogo.</p>
+ <p style="margin-top:28px"><a class="mail" href="mailto:info@hipcoderecords.com">info@hipcoderecords.com</a></p>
+</div></section>
+
+<section class="panel" id="p-contatti"><button class="x" aria-label="Chiudi">×</button><div class="in">
+ <div class="kick">Contatti</div>
+ <a class="mail" href="mailto:info@hipcoderecords.com">info@hipcoderecords.com</a>
+ <dl>
+  <dt>Sede</dt><dd>Via Marin Faliero 16, 37138 Verona (VR), Italia</dd>
+  <dt>Presidente / CEO</dt><dd>Valentina Serugeri</dd>
+  <dt>Edizioni</dt><dd>Moveubabe Music Publishing Group — publishing@moveubabemusic.com</dd>
+ </dl>
+</div></section>
+
+<script src="assets/releases.js"></script>
+<script>
+(function(){
+
+function esc(x){return String(x).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var R=window.RELEASES||[];
+var NOTE={
+ HIPC013:'Sette brani strumentali, uno per ciascuno dei sette nani: Doc, Happy, Sneezy, Bashful, Sleepy, Grumpy e Dopey.',
+ HIPC011:'Bruno Marini al sax baritono con Marco Arienti al contrabbasso e Alberto Olivieri alla batteria. Sei brani, ognuno dedicato a un "uomo nero" di una tradizione diversa.',
+ HIPC010:'Bruno Marini rilegge sei classici del blues, da "Born Under a Bad Sign" a "Spoonful", passando per "Mannish Boy" e "Peter Gunn".',
+ HIPC012:'Max Denny con Bruno Marini, Alberto Olivieri e Chubby John: blues tra "Mannish Boy" di Muddy Waters, "Equinox" di John Coltrane e brani originali.',
+ HIPC004:'Grazia Di Grace tra standard come "Summertime" e "Fever" e brani originali firmati con Bruno Marini.',
+ HIPC005:'Zeno Fatti con Bruno Marini e Mattia Marotta: sette brani acid jazz scritti insieme, da "Speedbag" a "Electric Heaven".',
+ HIPC002:'Lara Luppi mette in musica sette poesie di Emily Dickinson, da "Bring Me the Sunset in a Cup" a "The Brain Is Wider Than the Sky".'
+};
+R.forEach(function(r){r.g=r.genres.join(' · ');r.cr=r.writers?('Autori: '+r.writers):'';r.pub='(P) '+r.cpy.replace(/Hip Code$/i,'Hip Code Records').replace(/HIP CODE$/,'Hip Code Records')+(/moveubabe/i.test(r.pub)?' · © '+r.iso.slice(0,4)+' Moveubabe Music Publishing Group':'');r.tr=r.tr.map(function(x){var w=(x.w||'').replace(/,\s*/g,', ');return [x.t,x.len,(w&&(!r.writers||w.replace(/\s/g,'')!==r.writers.replace(/\s/g,'')))?w:'']});if(r.tr.some(function(x){return x[2]}))r.cr=r.prod&&r.prod!=='Hip Code'&&r.prod!=='HIP CODE'?'Prodotto da '+r.prod:'';r.a=r.a.replace(/ & /g,', ');});
+// slides
+var stage=document.getElementById('stage'),art=stage.querySelector('.artists');
+R.slice().sort(function(a,b){return a.iso<b.iso?1:-1}).forEach(function(r){var d=document.createElement('div');d.className='shot rel';d.innerHTML='<div class="blur" style="background-image:url('+r.img+')"></div><img class="art" src="'+r.hero+'" alt=""><div class="caption"><small>'+esc(r.a.replace(/ & /g,' · '))+' · '+r.cat+'</small><b>'+esc(r.t)+'</b></div>';d.onclick=function(){open('catalogo');show(R.indexOf(r),true)};d.style.cursor='pointer';stage.insertBefore(d,art);});
+stage.firstElementChild.classList.add('on');
+// news
+var nl=document.getElementById('news'),items=[{iso:'2026-10-30',d:'30 ottobre 2026',h:'Online il nuovo sito di Hip Code Records',p:"Il nuovo indirizzo dell'etichetta è hipcoderecords.com, con catalogo, notizie e un contatto diretto per artisti, licenze e sincronizzazioni: info@hipcoderecords.com."}];
+R.forEach(function(r){items.push({iso:r.iso,d:r.d,h:r.a+' — "'+r.t+'"',p:'Esce "'+r.t+'" ('+r.cat+'). '+(NOTE[r.cat]||'')});});
+items.sort(function(a,b){return a.iso<b.iso?1:-1}).forEach(function(n){var a=document.createElement('article');a.innerHTML='<time datetime="'+n.iso+'">'+n.d+'</time><div><h3>'+esc(n.h)+'</h3><p>'+esc(n.p)+'</p></div>';nl.appendChild(a);});
+var grid=document.getElementById('grid'),det=document.getElementById('detail');
+R.forEach(function(r,k){var b=document.createElement('button');b.className='card';b.innerHTML='<img src="'+r.img+'" alt="Copertina di '+esc(r.t)+'" loading="lazy"><b>'+esc(r.t)+'</b><span>'+esc(r.a)+'</span><span>'+r.cat+'</span>';b.onclick=function(){show(k,true)};grid.appendChild(b);});
+function show(k,scroll){var r=R[k];[].forEach.call(grid.children,function(c,j){c.classList.toggle('on',j===k)});
+ det.innerHTML='<div class="kick">'+r.cat+' · '+esc(r.g)+'</div><h3>'+esc(r.t)+'</h3><div class="meta"><div>Artista<strong>'+esc(r.a)+'</strong></div><div>Uscita<strong>'+r.d+'</strong></div><div>UPC<strong>'+r.upc+'</strong></div></div>'+
+ '<div class="release"><img class="cover" src="'+r.img+'" alt="Copertina di '+esc(r.t)+'"><div><ol class="tracks">'+r.tr.map(function(x,i){return '<li><em>'+('0'+(i+1)).slice(-2)+'</em><span>'+esc(x[0])+(x[2]?'<small>'+esc(x[2])+'</small>':'')+'</span><span>'+x[1]+'</span></li>'}).join('')+'</ol>'+
+ '<p style="margin-top:20px;font-size:15px;color:#666">'+esc(r.cr)+'<br>'+esc(r.pub)+'</p></div></div>';
+ if(scroll)det.scrollIntoView({behavior:'smooth'});}
+show(0,false);
+ var shots=[].slice.call(document.querySelectorAll('.shot')),i=0,t;
+ function go(n){shots[i].classList.remove('on');i=(n+shots.length)%shots.length;shots[i].classList.add('on');clearInterval(t);t=setInterval(function(){go(i+1)},6000);}
+ document.querySelector('.prev').onclick=function(){go(i-1)};
+ document.querySelector('.next').onclick=function(){go(i+1)};
+ shots.forEach(function(x){x.classList.remove("on")});go(0);
+ var menu=document.querySelector('.menu'),burger=document.querySelector('.burger');
+ burger.onclick=function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);};
+ function open(id){menu.classList.remove('open');document.querySelectorAll('.panel.open').forEach(function(p){p.classList.remove('open')});var p=document.getElementById('p-'+id);if(p){p.classList.add('open');p.scrollTop=0;}}
+ document.querySelectorAll('[data-open]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();open(a.getAttribute('data-open'));});});
+ document.querySelectorAll('.panel .x').forEach(function(x){x.onclick=function(){x.parentNode.classList.remove('open')};});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.panel.open').forEach(function(p){p.classList.remove('open')});menu.classList.remove('open');}});
+ document.getElementById('y').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
