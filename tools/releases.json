@@ -678,6 +678,12 @@
     "w": "",
     "genre": "Jazz"
    }
+  ],
+  "perf": [
+   [
+    "Alberto Olivieri",
+    "drums"
+   ]
   ]
  },
  "VBT-BUT": {
@@ -748,6 +754,12 @@
     "w": "",
     "genre": "Jazz"
    }
+  ],
+  "perf": [
+   [
+    "Alberto Olivieri",
+    "drums"
+   ]
   ]
  }
 }

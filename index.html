@@ -261,7 +261,7 @@ R.forEach(function(r,k){var b=document.createElement('button');b.className='card
 function show(k,scroll){var r=R[k];[].forEach.call(grid.children,function(c,j){c.classList.toggle('on',j===k)});
  det.innerHTML='<div class="kick">'+(r.cat?r.cat+' · ':'')+esc(r.kind||r.g)+'</div><h3>'+esc(r.t)+'</h3><div class="meta"><div>Artist<strong>'+esc(r.a)+'</strong></div><div>Released<strong>'+r.d+'</strong></div>'+(r.upc?'<div>UPC<strong>'+r.upc+'</strong></div>':'')+'</div>'+(r.spotify?'<p style="margin:18px 0 0"><a class="listen" href="'+r.spotify+'" target="_blank" rel="noopener">Listen on Spotify &rarr;</a></p>':'')+
  '<div class="release"><img class="cover" src="'+r.img+'" alt="'+esc(r.t)+' cover"><div><ol class="tracks">'+r.tr.map(function(x,i){return '<li><em>'+('0'+(i+1)).slice(-2)+'</em><span>'+esc(x[0])+(x[2]?'<small>'+esc(x[2])+'</small>':'')+'</span><span>'+x[1]+'</span></li>'}).join('')+'</ol>'+
- '<p style="margin-top:20px;font-size:15px;color:#666">'+esc(r.cr)+'<br>'+esc(r.pub)+'</p></div></div>';
+ '<p style="margin-top:20px;font-size:15px;color:#666">'+(r.perf?r.perf.map(function(x){return '<b style="color:#111">'+esc(x[0])+'</b> '+esc(x[1])}).join(' &middot; ')+'<br>':'')+esc(r.cr)+'<br>'+esc(r.pub)+'</p></div></div>';
  if(scroll)det.scrollIntoView({behavior:'smooth'});}
 show(0,false);
  var shots=[].slice.call(document.querySelectorAll('.shot')),i=0,t;
