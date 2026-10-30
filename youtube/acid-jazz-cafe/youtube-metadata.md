@@ -14,7 +14,8 @@ Alternative per i prossimi video (stesso schema dei loro più visti):
 ```
 Acid Jazz Café | A Funky Groove Break [Acid Jazz, Jazz Funk, Groove Jazz]
 
-Listen on Spotify 🎧 https://open.spotify.com/artist/33pRZzU8qLnTT2vQAxinrK
+Follow us on Spotify 🎧 https://open.spotify.com/playlist/4uFP4r61397TCyHiZjsRbI
+Valentina Black Trio on Spotify 🎧 https://open.spotify.com/artist/33pRZzU8qLnTT2vQAxinrK
 Follow us on Instagram 📱 [@INSTAGRAM HIP CODE]
 Website 🌐 https://hipcoderecords.com
 
