@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Abril;src:url(abril.woff2)}
+@font-face{font-family:Oswald;src:url(oswald.woff2)}
+@font-face{font-family:Oswald;font-weight:700;src:url(oswald7.woff2)}
+@font-face{font-family:Play;font-style:italic;src:url(playfair.woff2)}
+*{margin:0;box-sizing:border-box}
+body{width:1280px;height:720px;overflow:hidden;background:#39ff14;font-family:Oswald}
+.bg{position:absolute;inset:0;background:#39ff14}
+.light{display:none}
+.disc{position:absolute;right:-170px;top:50%;width:760px;height:760px;transform:translateY(-50%);border-radius:50%;
+ background:repeating-radial-gradient(circle,#0b0b0b 0 2px,#181512 2px 4px);box-shadow:0 30px 120px rgba(0,0,0,.9),inset 0 0 60px rgba(255,220,150,.05)}
+.disc:before{content:"";position:absolute;inset:-2px;border-radius:50%;background:conic-gradient(from 200deg,transparent 0 30deg,rgba(255,230,180,.13) 40deg,transparent 60deg 210deg,rgba(255,230,180,.09) 220deg,transparent 240deg)}
+.label{position:absolute;left:50%;top:50%;width:250px;height:250px;margin:-125px;border-radius:50%;background:#39ff14;display:flex;align-items:center;justify-content:center}
+.label img{width:180px;filter:invert(1)}
+.label:after{content:"";position:absolute;width:16px;height:16px;border-radius:50%;background:#0a0806}
+.txt{position:absolute;left:70px;top:92px;width:640px}
+.k{color:#000;letter-spacing:.32em;font-size:26px;font-weight:700}
+h1{font-family:Abril;color:#000;font-size:150px;line-height:.9;margin-top:14px;text-shadow:none}
+h2{font-family:Play;font-style:italic;color:#000;font-size:120px;line-height:1;margin-top:-6px;font-weight:400}
+.sub{color:#000;font-size:30px;letter-spacing:.06em;margin-top:26px}
+.sub b{color:#000;font-weight:700}
+.logo{position:absolute;left:70px;bottom:46px;height:44px;opacity:.95}
+.grain{position:absolute;inset:0;opacity:.08;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style></head><body>
+<div class="bg"></div><div class="light"></div>
+<div class="disc"><div class="label"><img src="logo.png"></div></div>
+<div class="txt"><div class="k">FUNKY GROOVES · JAZZ FUNK</div><h1>ACID JAZZ</h1><h2>Café</h2><div class="sub"><b>41 MIN</b> · A FUNKY GROOVE BREAK</div></div>
+<img class="logo" src="logo-black.png">
+<div class="grain"></div>
+</body></html>
