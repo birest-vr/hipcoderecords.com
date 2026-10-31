@@ -19,17 +19,20 @@ Website 🌐 https://hipcoderecords.com
 Turn off the lights and let the city fade away. A deep baritone saxophone drifts through the dark like a slow comet, a trumpet answers from somewhere far away, and the rhythm section keeps you floating in zero gravity. This is late night jazz for long drives, quiet rooms and minds that wander among the stars: perfect for reading, working, dreaming or simply letting go. 🌌🎷✨
 
 Full album: "Elements in Space" by Bruno Marini (Hip Code Records)
-Bruno Marini: baritone sax & flute · Davide Ghidoni: trumpet · Jack Morgan: bass · B.C. Bag: drums
+Bruno Marini: baritone sax & flute
+Davide Ghidoni: trumpet
+Jack Morgan: bass
+B.C. Bag: drums
 All compositions by Bruno Marini
 
-00:00 Dim World BRUNO MARINI
-07:14 Hell on Earth BRUNO MARINI
-10:58 Big Bang Twist (Flute Reprise) BRUNO MARINI
-13:10 Big Bang Twist BRUNO MARINI
-19:52 Burning Globe BRUNO MARINI
-25:41 Elements in Space BRUNO MARINI
-33:31 Supernova Remains BRUNO MARINI
-41:05 Moon Facts BRUNO MARINI
+00:00 Dim World - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+07:14 Hell on Earth - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+10:58 Big Bang Twist (Flute Reprise) - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+13:10 Big Bang Twist - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+19:52 Burning Globe - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+25:41 Elements in Space - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+33:31 Supernova Remains - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
+41:05 Moon Facts - BRUNO MARINI, DAVIDE GHIDONI, JACK MORGAN, B.C. BAG
 
 © & ℗ Hip Code Records · For licensing & sync: info@hipcoderecords.com
 
